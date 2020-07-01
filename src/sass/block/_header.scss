@@ -1,0 +1,40 @@
+.header {
+    margin: 0;
+    padding: 0;
+    padding-top: 50px;
+    background: url(../img/header-bg.jpg) no-repeat center (center/cover);
+    min-height: 636px;
+    text-align: center;
+    .nav-block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .delivery {
+            margin-right: 100px;
+            &-link {
+                padding: 15px 50px;
+                background-color: #fff; 
+                border-radius: 10px;
+                color: $text-dark;
+                font-size: 20px;
+                transition: all 0.5s ease;
+                &:hover {
+                    color: $main-color;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    &__title {
+        margin-top: 50px;
+        margin-bottom: 0;
+        font-family: 'Aleo', sans-serif;
+        color: $light;
+        font-size: 40px;
+        font-weight: 300;
+        span {
+            font-weight: bold;
+        }
+    }
+
+}

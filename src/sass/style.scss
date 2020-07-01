@@ -1,0 +1,33 @@
+
+
+@import "libs/fonts";
+@import "libs/bootstrap-reboot";
+@import "base/variables";
+@import "base/mixins";
+
+* {
+    margin: 0;
+    font-family: 'Aleo', sans-serif;
+}
+
+.wrap {
+    margin: 99px 174px;
+}
+.status {
+    width: 100%;
+    color: red;
+
+}
+
+@import "block/header";
+@import "block/menu";
+@import "block/about";
+@import "block/menu-list";
+@import "block/catalog";
+@import "block/reviews";
+@import "block/subscribe";
+@import "block/footer";
+@import "block/modal";
+@import "block/form";
+
+@import "block/media";

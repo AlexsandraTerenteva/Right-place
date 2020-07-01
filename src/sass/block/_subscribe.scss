@@ -1,0 +1,36 @@
+.subscribe {
+    background: url('../img/subscribe-bg.jpg') no-repeat center (center/cover);
+    min-height: 377px;
+    color: $light;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__title {
+        font-size: 30px;
+
+    }
+    .form {
+        &__input {
+            background-color: rgba(251, 251, 251, 0.2);
+            width: 390px;
+            padding: 15px 20px;
+            font-size: 20px;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+        }
+        &__btn {
+            background-color: $main-color;
+            margin-left: 30px;
+            width: 240px;
+            padding: 15px 0;
+            font-size: 20px;
+            color: $light;
+            border: none;
+            border-radius: 5px;
+        }
+    }
+
+}

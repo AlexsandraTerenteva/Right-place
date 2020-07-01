@@ -1,0 +1,79 @@
+.about {
+    &__block {
+        display: flex;
+        margin-bottom: 100px;
+        position: relative;
+        z-index: 10;
+        .image-block {
+            width: 493px;
+            min-height: 430px;
+            height: 430px;
+            padding: 20px;
+            border-radius: 3px;
+            border: 1px solid #e7e7e7;
+            box-shadow: -1px 1px 10px 5px rgba(231,231,231,0.75);
+            overflow: hidden;
+            &__cake1 {
+                background: url("../img/cake2.jpg") no-repeat center (center/cover);
+                height: 197px;
+            }
+            &__cake2 {
+                background: url("../img/cake1.jpg") no-repeat center (center/cover);
+                height: 197px;
+            }
+            &_drink {
+                display: flex;
+            }
+            &__drink1 {
+                background: url("../img/drink1.jpg") no-repeat center (center/cover);
+                width: 245px;
+                min-height: 395px;
+            }
+            &__drink2 {
+                background: url("../img/drink2.jpg") no-repeat center (center/cover);
+                width: 245px; 
+                min-height: 395px;
+            }
+        }
+        .description {
+            width: 50%;
+            line-height: 1.8;
+            color: $text-dark;
+            &_right {
+                margin-left: 75px;
+            }
+            &_left {
+                margin-right: 75px;
+                text-align: right;
+            }
+            &__title {
+                font-size: 40px;
+            }
+            &__subtitle {
+                font-size: $size-subtitle;
+                font-weight: bold;
+                margin-bottom: 25px;
+            }
+            &__text {
+                font-size: $size-text;
+                margin-bottom: 30px;
+            }
+            .button {
+                &__link {
+                    color: $main-color;
+                    font-weight: bold;
+                    padding: 16px 25px;
+                    border: 2px solid $main-color;
+                    border-radius: 5px;
+                    i {
+                        margin-left: 10px;
+                    }
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+
+}

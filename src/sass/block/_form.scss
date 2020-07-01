@@ -1,0 +1,20 @@
+.feed-form {
+    input {
+        margin-bottom: 10px;
+        padding: 5px;
+        &:focus, &:active {
+            outline-color: $main-color;
+        }
+    }
+    .button {
+        background-color: $main-color;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        color: $light;
+        font-size: 1.1rem;
+        &:focus,&:active {
+            outline:none;
+        }
+    }
+}

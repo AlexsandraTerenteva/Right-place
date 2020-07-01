@@ -1,0 +1,239 @@
+@media (max-width: 1200px) {
+    .wrap {
+        margin: 10% 10%;
+    }
+}
+
+@media (max-width: 992px) {
+    .about {
+        &__block {
+            .description {
+                width: 70%;
+                &_right {
+                    margin-left: 40px;
+                }
+                &_left {
+                    margin-right: 40px;
+                    text-align: right;
+                }
+                &__title {
+                    font-size: 30px;
+                    margin-bottom: 0;
+                }
+                &__subtitle {
+                    font-size: $size-text;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .catalog {
+        &__container {
+            max-width: 768px;
+        }
+        &__content {
+            width: 74%;
+            margin: 0 auto;
+        }
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding-top: 0;
+        .burger-menu {
+            margin-left: 60px;
+        }
+        .list {
+            width: 100%;
+        }
+        .nav-block {
+            .delivery {
+                margin-right: 10px;
+            }
+            .delivery-link {
+                padding: 15px;
+            }
+        }
+       
+    }
+    .menu__block {
+       width: 50%;
+    }
+    .about {
+        &__block {
+            flex-direction: column;
+            &_drink {
+                flex-direction: column-reverse;
+            }
+            .description {
+                width: 100%;
+                text-align: center;
+                &_right {
+                    margin-left: 0;
+                }
+                &_left {
+                    margin-right: 0;
+                }
+                &__title {
+                   margin-top: 30px;
+                }
+                &__text {
+                    margin-bottom: 50px;
+                }
+            }
+            .image-block {
+                margin: 0 auto;
+                width: 100%;
+            }
+        }
+    }
+    .catalog {
+        &__container {
+            max-width: 500px;
+            min-height: 280px;
+        }
+        &__wrap {
+            margin: 0 auto;
+            margin-top: 5%;
+        }
+        &__item {
+            width: 150px;
+            border: none;
+        }
+        &__content {
+            padding: 0;
+            width: 280px;
+            overflow-y: hidden;
+        }
+
+        .carusel {
+            width: 280px;
+            margin: 0;
+            &__img {
+                width: 100%;
+            }
+
+        }
+    }
+    .reviews {
+        &__customer {
+            width: 100%;
+        }
+        &__container {
+            flex-direction: column;
+        }
+        &__menu {
+            display: none;
+        }
+    }
+ 
+}
+
+@media (max-width: 576px) {
+    .header {
+        min-height: 100vh;
+        .burger-menu {
+            &__span {
+                width: 40px;
+                &::before,
+                &::after {
+                    width: 40px;
+                }
+            }
+        }
+        &__logo {
+          img {
+              width: 40%;
+          }
+        }
+        &__title {
+            font-size: 30px;
+        }
+        .nav-block{
+            .delivery-link {
+                font-size: 16px;
+            }
+        }
+    }
+    .menu {
+        &__link {
+            font-size: 25px;
+        }
+    }
+    .catalog {
+       &__list {
+           flex-direction: column;
+       }
+       &__item {
+           width: 100%;
+           padding: 10px;
+           font-size: 16px;
+       }
+    }
+    .subscribe {
+        padding: 10%;
+        &__title {
+            font-size: 25px;
+        }
+        .form {
+            width: 100%;
+            &__input {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+            &__btn {
+                width: 100%;
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .header {
+        .burger-menu {
+            margin-left: 20px;
+        }
+        &__logo {
+          img {
+              width: 40%;
+          }
+        }
+        &__title {
+            margin: 20px;
+            font-size: 25px;
+        }
+    }
+    .menu {
+        &__block {
+            width: 100%;
+        }
+       
+    }
+    .about {
+        &__block {
+            margin-bottom: 50px;
+            .image-block__drink2 {
+                display: none;
+            }
+        }
+        .wrap {
+            margin: 0;
+        }
+        .description {
+            padding: 10px 20px;
+            &__text {
+                max-height: 50vh;
+                overflow: hidden;
+            }
+        }
+    }
+    .catalog {
+        min-height: 100%;
+        padding: 20% 0;
+      
+    }
+
+}

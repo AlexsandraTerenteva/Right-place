@@ -1,0 +1,70 @@
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    flex-wrap: wrap;
+    &__link {
+        position: relative;
+        max-width: 100%;
+        display: block;
+        color: $light;
+        text-decoration: none;
+        font-size: 29px;
+        font-weight: bold;
+        font-style: italic;
+        &::before {
+            content: "";
+            bottom: -5px;
+            right: 0;
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            background-color: $light;
+            transition: 0.5s;
+            transform: scaleX(0);
+        }
+        &:hover {
+            color: $light;
+            text-decoration: none;
+            &::before {
+                transform: scaleX(1);
+            }
+        }
+        &_dark {
+            color: $text-dark;
+            &:hover {
+                color: $text-dark;
+            }
+        }
+    }
+    &__block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25%;
+        min-height: 210px;
+        &_happy {
+            flex-direction: column;
+        }
+        &_breakfast {
+            background: url('../img/breakfast.jpg') no-repeat center (center/cover);
+        }
+        &_lunch {
+            background: url('../img/Lunch.jpg') no-repeat center (center/cover);
+        }
+        &_dinner {
+            background: url('../img/dinner.jpg') no-repeat center (center/cover);
+        }
+    }
+    &__special {
+        text-align: center;
+        width: 100%;
+        padding: 39px;
+        &_grey-bg {
+            background-color: #e4e5e7;
+        }
+        &_orange-bg {
+            background-color: $main-color;
+        }
+    }
+}
